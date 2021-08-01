@@ -67,16 +67,16 @@
 
     <script>
         
-     document.getElementById("btn1").addEventListener("mouseenter", (e)=>{
+     document.getElementById("btn1").addEventListener("click", (e)=>{
                     var el = document.querySelector('#entityID1');
                     el.setAttribute("obj-model", 'src', "#lego_obj_1", "#lego_mtl_1");
                     el.setAttribute("scale",'0.005 0.005 0.005');
-		    el.setAttribute("rotate",'90 0 0');
+		    el.setAttribute("rotate",'0 0 0');
 					    
 		   
 })
 
-     document.getElementById("btn2").addEventListener("mouseenter", (e)=>{
+     document.getElementById("btn2").addEventListener("click", (e)=>{
                     
                     var el = document.querySelector('#entityID1');
               
@@ -87,13 +87,13 @@
 
 
 
-    document.getElementById("btn3").addEventListener("mouseenter", (e)=>{
+    document.getElementById("btn3").addEventListener("click", (e)=>{
                     
                     var el = document.querySelector('#entityID1');
               
                     el.setAttribute("obj-model", 'obj:url(model/lego_3.obj); mtl: url(model/lego_3.mtl)');
                     el.setAttribute("scale",'0.005 0.005 0.005');
-		    el.setAttribute("rotate",'90 0 0');
+		    el.setAttribute("rotate",'0 0 0');
                   
 })   
 
