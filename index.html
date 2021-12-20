@@ -55,7 +55,13 @@
 </div>
 
 <body style='margin : 0px; overflow: hidden;'></body>
-    <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false" renderer=gammaOutput:"true">  
+    <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false" renderer=gammaOutput:"true"> 
+	    
+	    <a-asset-item id="model1obj" src="model/lego_1.obj"></a-asset-item>
+	    <a-asset-item id="model1mtl" src="model/lego_1.mtl"></a-asset-item>
+	    <a-asset-item id="model2obj" src="model/lego_0.obj"></a-asset-item>
+	     <a-asset-item id="model2mtl" src="model/lego_0.mtl"></a-asset-item>
+	     <a-asset-item id="superheroe" src="model/SuperHeroe_M.glb"></a-asset-item>
 	  
 	    
       <a-marker preset="hiro">
@@ -69,7 +75,7 @@
         
      document.getElementById("btn1").addEventListener("click", (e)=>{
                     var el = document.querySelector('#entityID1');
-                    el.setAttribute("obj-model", 'obj:url(model/lego_1.obj); mtl: url(model/lego_1.mtl)');
+                    el.setAttribute("obj-model", 'obj:#model1obj; mtl: #model1mtl');
                     el.setAttribute("scale",'0.005 0.005 0.005');
 		    el.setAttribute("rotate",'0 0 0');
 	     	    el.setAttribute("position", '0 0 -1');	
@@ -81,7 +87,7 @@
                     
                     var el = document.querySelector('#entityID1');
               
-                   el.setAttribute("obj-model", 'obj:url(model/lego_0.obj); mtl: url(model/lego_0.mtl)');
+                   el.setAttribute("obj-model", 'obj:#mode2obj; mtl: #model2mtl');
                     el.setAttribute("scale",'0.007 0.007 0.007');
 		    el.setAttribute("rotate",'0 0 0');
 	            el.setAttribute("position", '0.2 0 -1');
@@ -93,7 +99,7 @@
                     
                     var el = document.querySelector('#entityID1');
               
-                    el.setAttribute("gltf-model", 'gltf:url(model/SuperHeroe_M.glb)');
+                    el.setAttribute("gltf-model", 'gltf:#superheroe');
                     el.setAttribute("scale",'0.09 0.09 0.09');
 		    el.setAttribute("rotate",'0 0 0');
 	            el.setAttribute("position", '0 0 0');
