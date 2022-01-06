@@ -63,12 +63,14 @@
 	     <a-asset-item id="model2mtl" src="./model/lego_0.mtl"></a-asset-item>
 	     <a-asset-item id="superheroe" src="./model/SuperHeroe_M.glb"></a-asset-item>
 	  
-	    
+  <a-entity>
+	  <a-camera>
       <a-marker preset="hiro">
        
-      	<a-entity id="entityID1" src=”#superheroe” position="0 0 0" rotation="0 0 0" scale="0.2 0.2 0.2" animation-mixer="clip: Captura_002_Vincent"></a-entity>
+      	<a-gltf-model id="entityID1" src=”#superheroe” position="0 0 0" rotation="0 0 0" scale="0.01 0.01 0.01" animation-mixer="clip: Captura_002_Vincent"></a-gltf-model>
       </a-marker>
-      <a-entity camera></a-entity>
+          </a-camera>
+      </a-entity>
     </a-scene>
 
     <script>
