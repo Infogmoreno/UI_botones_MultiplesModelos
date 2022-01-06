@@ -66,7 +66,7 @@
 	    
       <a-marker preset="hiro">
        
-      	<a-entity id="entityID1" src=”#superheroe” position="0 0 0" rotation="0 0 0" scale="1 1 1" animation-mixer="clip: Captura_002_Vincent"></a-entity>
+      	<a-entity id="entityID1" src=”#superheroe” position="0 0 0" rotation="0 0 0" scale="0.2 0.2 0.2" animation-mixer="clip: Captura_002_Vincent"></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
@@ -100,7 +100,7 @@
                     var el = document.querySelector('#entityID1');
               
                     el.setAttribute("gltf-model", 'gltf:#superheroe');
-                    el.setAttribute("scale",'1 1 1');
+                    el.setAttribute("scale",'0.1 0.1 0.1');
 		    el.setAttribute("rotate",'0 0 0');
 	            el.setAttribute("position", '0 0 0');
                   
